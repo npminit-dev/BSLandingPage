@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Page</title>
+  <!-- BOOTSTRAP 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+  <!-- Scroll Reveal API -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- Titillium Web font from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+ 
+  <!-- Custom CSS, asi personalizamos los estilos de Boostrap -->
+  <link rel="stylesheet" href="src/css/main.css">
+</head>
+<body>
+
+  <!-- NAVIGATION usando plantilla -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top"> <!-- navbar fixed en top -->
+    <div class="container"> <!-- container para agregar margen -->
+      <a class="navbar-brand" href="#">BOOSTRAP WEBSITE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto"> <!-- alineamos los items a la derecha con ms-auto -->
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#header">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#info-1">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header id="header">
+    <div class="container mt-5"> <!-- margen de 5 con respecto al navbar -->
+      <div class="row"> <!-- aunque no necesitemos rows, las columnas en bootstrap solo funcionan dentro de rows -->
+        <div class="col-md-6">
+          <div class="header-content-left">
+            <img src="src/img/image1.png" style="width: 100%;" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="header-content-right">
+            <h1 class="display-4">Lorem ipsum</h1> <!-- display-4 cambia el tamaño del texto, a menos numero mas grande el texto -->
+            <p class="mt-5"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, nulla tempore omnis accusantium libero adipisci perspiciatis assumenda consequatur nihil cupiditate repellendus, et atque! Suscipit, optio quia in temporibus quibusdam sunt.</p>
+            <a href="#" class="btn btn-outline-secondary btn-lg mt-2 header-btn">Read more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- TESTIMONIAL -->
+  <section id="testimonial">
+    <div class="container">
+      <p class="h2 mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio voluptates, corporis minus provident pariatur eius quos earum! Veniam quasi ad odit? Eos corrupti aperiam tempore voluptate explicabo consequuntur eum perspiciatis?</p>
+      <p class="h4">Richard Harrisom</p>
+    </div>
+  </section>
+
+  <!-- INFORMATION 1 -->
+  <section id="info-1">
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-6">
+          <div class="info-left">
+            <img src="src/img/image2.png" style="width: 100%" alt="">
+          </div>
+        </div>
+        <div class="col-md-6 my-auto"> <!-- my-auto alinea el contenido verticalmente, centrandolo en el eje de las Y -->
+          <div class="info-right">
+            <h2>Lorem ipsum dolor sit.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto a obcaecati fugiat qui itaque nulla accusantium, quibusdam iste ea id. Voluptatibus beatae incidunt repudiandae repellendus saepe dolorem voluptatum voluptate animi.</p>
+            <a href="" class="btn btn-outline-secondary btn-lg">Read more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INFORMATION 2 -->
+  <section id="info-2" class="p-1 mt-4" style="background: #f1f1f1;">
+    <div class="container">
+      <div class="row my-5">
+        <div class="col-md-6">
+          <h2>Lorem, ipsum dolor.</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta possimus distinctio itaque voluptatem delectus perferendis aperiam explicabo velit, esse, exercitationem dolorum vel temporibus, non quod dolor porro reprehenderit. Enim, impedit!</p>
+        </div>
+        <div class="col-md-6">
+          <h2>Lorem, ipsum dolor.</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta possimus distinctio itaque voluptatem delectus perferendis aperiam explicabo velit, esse, exercitationem dolorum vel temporibus, non quod dolor porro reprehenderit. Enim, impedit!</p>
+        </div>
+      </div> 
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <form class="card mt-4 mb-4">
+            <div class="card-body"> <!-- explicacion de las cards debajo de este footer -->
+              <div class="input-group mb-1">
+                <input type="text" label="input1_label" placeholder="Name" class="form-control">
+              </div>
+              <div class="input-group mb-1">
+                <input type="email" label="input1_label" placeholder="E-mail" class="form-control">
+              </div>
+              <div class="input-group mb-1">
+                <textarea rows="8" cols="30" placeholder="Write message here" class="form-control">asdasd</textarea>
+              </div>
+              <div class="d-grid gap-2">
+                <button class="btn btn-outline-secondary btn-">SEND</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Una tarjeta es un contenedor de contenido flexible y extensible. Incluye opciones para encabezados y pies de página, una amplia variedad de contenido, colores de fondo contextuales y potentes opciones de visualización. 
+  Si está familiarizado con Bootstrap 3, las tarjetas reemplazan nuestros viejos paneles, pozos y miniaturas. 
+  Una funcionalidad similar a esos componentes está disponible como clases de modificadores para tarjetas.-->
+
+  <!-- BS5 Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+  <script src="src/scripts/scripts.js"></script>
+
+</body>
+</html>
